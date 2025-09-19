@@ -1,0 +1,7 @@
+tunnel: 0d07d316-fdf0-4dea-adf5-8bf20b92f577
+credentials-file: C:\Users\Kris\.cloudflared\0d07d316-fdf0-4dea-adf5-8bf20b92f577.json
+
+ingress:
+  - hostname: lapper.site
+    service: http://localhost:3000
+  - service: http_status:404

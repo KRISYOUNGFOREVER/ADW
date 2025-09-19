@@ -1,0 +1,23 @@
+graph TD
+    subgraph 后端
+        subgraph DIFY
+            A[需求输入] --> B[智能体]
+            B --> C[需求分析<br/>todolist构建<br/>工作流选择与执行<br/>用户确认与介入优化<br/>分析不足<br/>确定修改方案<br/>用户确认是否需要继续优化<br/>输出]
+        end
+        subgraph MCP集群
+            D[需求输入] --> E[需求分析]
+            E --> F[todolist制作与工作分配]
+            F --> G[执行]
+            G --> H[用户介入判断]
+            H --> I[制定最简优化方案和工作分配]
+            I --> F
+        end
+    end
+    subgraph 前端
+        J[工作流式交互]
+        K[聊天式交互]
+    end
+    用户 --> J
+    用户 --> K
+    J --> B
+    K --> D

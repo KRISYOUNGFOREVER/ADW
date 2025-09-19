@@ -1,0 +1,37 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Logo 图标部分 -->
+  <g transform="translate(10, 10)">
+    <!-- 外圆环 -->
+    <circle cx="20" cy="20" r="18" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
+    
+    <!-- 内部设计元素 - 代表创意和设计 -->
+    <path d="M8 20 L20 8 L32 20 L20 32 Z" fill="url(#logoGradient)" opacity="0.8"/>
+    <circle cx="20" cy="20" r="6" fill="white"/>
+    <circle cx="20" cy="20" r="3" fill="url(#logoGradient)"/>
+    
+    <!-- 装饰性线条 -->
+    <path d="M5 15 Q20 5 35 15" stroke="url(#logoGradient)" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M5 25 Q20 35 35 25" stroke="url(#logoGradient)" stroke-width="1.5" fill="none" opacity="0.6"/>
+  </g>
+  
+  <!-- 文字部分 -->
+  <text x="55" y="25" font-family="'Microsoft YaHei', sans-serif" font-size="16" font-weight="600" fill="url(#textGradient)">贝瑞文化</text>
+  <text x="55" y="42" font-family="'Arial', sans-serif" font-size="10" font-weight="400" fill="#6b7280" opacity="0.8">BERRY CULTURE</text>
+  
+  <!-- 装饰性元素 -->
+  <circle cx="180" cy="15" r="2" fill="url(#logoGradient)" opacity="0.6"/>
+  <circle cx="185" cy="20" r="1.5" fill="url(#logoGradient)" opacity="0.4"/>
+  <circle cx="175" cy="25" r="1" fill="url(#logoGradient)" opacity="0.3"/>
+</svg>

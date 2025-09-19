@@ -1,0 +1,43 @@
+{
+  "name": "dify-workflow-integration",
+  "version": "1.0.0",
+  "description": "Dify工作流集成模块，提供节点监控和用户交互功能",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "jest"
+  },
+  "keywords": [
+    "dify",
+    "workflow",
+    "integration",
+    "monitoring",
+    "user-interaction"
+  ],
+  "author": "AI Design Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/dotenv": "^8.2.3",
+    "@types/express": "^4.17.23",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.19.16",
+    "@types/socket.io": "^3.0.2",
+    "jest": "^29.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

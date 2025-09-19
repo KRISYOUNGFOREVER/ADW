@@ -1,0 +1,191 @@
+.custom-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 0;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-brand {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.brand-text {
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.header-brand:hover .brand-text {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transform: scale(1.05);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-button {
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-button:hover,
+.nav-button.active {
+  color: #667eea;
+  background: rgba(102, 126, 234, 0.08);
+  border-color: rgba(102, 126, 234, 0.2);
+  transform: translateY(-1px);
+}
+
+.nav-button .anticon {
+  font-size: 14px;
+}
+
+.cta-button {
+  height: 40px;
+  padding: 0 24px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+}
+
+/* 下拉菜单样式覆盖 */
+.ant-dropdown {
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.ant-dropdown .ant-dropdown-menu {
+  border-radius: 12px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+}
+
+.ant-dropdown .ant-dropdown-menu-item {
+  border-radius: 8px;
+  margin: 2px 0;
+  padding: 10px 12px;
+  transition: all 0.2s ease;
+}
+
+.ant-dropdown .ant-dropdown-menu-item:hover {
+  background: rgba(102, 126, 234, 0.08);
+  color: #667eea;
+}
+
+.ant-dropdown .ant-dropdown-menu-item .anticon {
+  margin-right: 8px;
+  color: #999;
+}
+
+.ant-dropdown .ant-dropdown-menu-item:hover .anticon {
+  color: #667eea;
+}
+
+.ant-dropdown .ant-dropdown-menu-submenu-title {
+  border-radius: 8px;
+  margin: 2px 0;
+  padding: 10px 12px;
+  transition: all 0.2s ease;
+}
+
+.ant-dropdown .ant-dropdown-menu-submenu-title:hover {
+  background: rgba(102, 126, 234, 0.08);
+  color: #667eea;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .custom-header {
+    height: 60px;
+  }
+  
+  .header-content {
+    padding: 0 16px;
+  }
+  
+  .brand-text {
+    font-size: 20px;
+  }
+  
+  .header-nav .ant-space {
+    gap: 8px !important;
+  }
+  
+  .nav-button {
+    height: 36px;
+    padding: 0 12px;
+    font-size: 14px;
+  }
+  
+  .cta-button {
+    height: 36px;
+    padding: 0 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-nav .nav-button span:not(.anticon) {
+    display: none;
+  }
+  
+  .nav-button {
+    padding: 0 8px;
+    min-width: 36px;
+  }
+}
+
+/* 滚动时的样式变化 */
+.custom-header.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}

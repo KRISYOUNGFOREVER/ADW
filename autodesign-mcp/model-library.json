@@ -1,0 +1,52 @@
+{
+  "modelLibrary": {
+    "description": "用户的可选模型库",
+    "lastUpdated": "2024-12-19",
+    "models": [
+      {
+        "id": 1,
+        "name": "chayeguan for masters",
+        "uuid": "093404585b3d44dc944f8c96116af453",
+        "version": "v1.0",
+        "baseAlgo": "F.1",
+        "commercialUse": false,
+        "showType": "public",
+        "status": "有执行异常问题",
+        "url": "https://www.liblib.art/modelinfo/51403172d7cd496483737043d68e9d63?from=personal_page&versionUuid=093404585b3d44dc944f8c96116af453"
+      },
+      {
+        "id": 2,
+        "name": "mowtai",
+        "uuid": "80a7350b9aa44cb792ee1ae2944f6ca6",
+        "version": "1",
+        "baseAlgo": "F.1",
+        "commercialUse": false,
+        "showType": "private",
+        "status": "未测试",
+        "url": "https://www.liblib.art/modelinfo/d25cfdf85e274f13acac54847e4499df?from=personal_page&versionUuid=80a7350b9aa44cb792ee1ae2944f6ca6"
+      },
+      {
+        "id": 3,
+        "name": "wangxuetao VER2",
+        "uuid": "23c57c51469c456c8e00c1fe0d06daf1",
+        "version": "2.0",
+        "baseAlgo": "F.1",
+        "commercialUse": false,
+        "showType": "public",
+        "status": "推荐使用",
+        "url": "https://www.liblib.art/modelinfo/7cb29563c2b54dfbbf11153e368b9b9d?from=personal_page&versionUuid=23c57c51469c456c8e00c1fe0d06daf1"
+      }
+    ],
+    "usage": {
+      "totalModels": 3,
+      "commercialModels": 0,
+      "privateModels": 1,
+      "publicModels": 2
+    },
+    "notes": [
+      "所有模型均不支持商用 (commercialUse: false)",
+      "建议优先使用 wangxuetao VER2 或 mowtai 模型",
+      "chayeguan for masters 模型在之前测试中出现执行异常"
+    ]
+  }
+}
